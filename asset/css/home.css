@@ -1,0 +1,269 @@
+
+
+
+
+.section-content {
+    margin: 0px auto;
+    padding: 0px 20px;
+    max-width: var(--site-max-site);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hero-section {
+    position: relative;
+    min-height: 40vh;
+    background-color: var(--background-accent-color);
+    overflow: visible;
+}
+
+.hero-section .section-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    color: var(--dark-color);
+    justify-content: space-between;
+    z-index: 1;
+    margin: 0 80px;
+
+}
+
+.blob {
+    position: absolute;
+    border-radius: var(--border-radius-circle);
+    background: rgba(50, 101, 211, 0.05);
+    filter: blur(2px);
+}
+
+.blob-1 {
+    width: 280px;
+    height: 280px;
+    top: 20px;
+    right: 38%;
+}
+
+.blob-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 20px;
+    right: -35px;
+}
+
+.dot-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle, rgba(50, 101, 211, 0.15) 1px, transparent 1px);
+    background-size: 18px 18px;
+    z-index: 0;
+}
+
+.blob-square {
+    position: absolute;
+    border-radius: 10%;
+    background: rgba(255, 176, 72, 0.5);
+}
+
+.squared-1 {
+    background: rgba(255, 239, 17, 0.5);
+    width: 80px;
+    height: 80px;
+    top: 15%;
+    right: 4%;
+}
+
+.squared-2 {
+    width: 250px;
+    height: 250px;
+    bottom: -60px;
+    left: -20px;
+    background: rgba(252, 184, 95, 0.2);
+
+}
+
+.squared-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 20%;
+    left: 8%;
+}
+
+.hero-section .hero-details .quotes {
+    color: var(--tetriarty-color);
+    width: 28%;
+    font-weight: var(--font-weight-bold);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius-s);
+    font-size: var(--font-size-s);
+    padding: 10px 15px;
+}
+
+.hero-section .hero-details .tittle {
+    color: var(--dark-color);
+    font-weight: var(--font-weight-bold);
+    font-size: 3rem;
+}
+
+
+.hero-details .tittle-nama-sekolah {
+    position: relative;
+    margin-top: -15px;
+    font-size: var(--font-size-xxxl);
+    color: var(--tetriarty-color);
+}
+
+.tittle-nama-sekolah::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 5px;
+    width: 10%;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-s);
+}
+
+.tittle-nama-sekolah::after {
+    content: "";
+    position: absolute;
+    left: 10.1%;
+    bottom: -5px;
+    height: 5px;
+    width: 5px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-circle);
+}
+
+
+.hero-section .hero-details .description {
+    max-width: 70%;
+    margin: 24px 0 30px;
+    font-size: var(--font-size-m);
+    text-align: justify;
+}
+
+.hero-section .hero-image-wrapper {
+    border-radius: var(--border-radius-m);
+    overflow: hidden;
+    display: block;
+    margin-top: 5%;
+    border-radius: var(--border-radius-m);
+    width: 100vh;
+    height: 50vh;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 var(--primary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hero-image-wrapper .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #e4e4f5;
+
+}
+
+
+
+.button.instagram {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+
+
+
+}
+
+.button.contact-us {
+    color: var(--tetriarty-color);
+    border-color: var(--tetriarty-color);
+}
+
+.button:hover {
+    color: var(--tetriarty-color);
+    background-color: white;
+    border-color: var(--tetriarty-color);
+}
+
+.school-desc {
+    margin: 20px 0;
+    user-select: none;
+    min-height: 50vh;
+}
+
+.school-desc .section-school-content {
+    padding: 0 3%;
+
+}
+
+.section-school-content h1 {
+    padding-top: 2%;
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.school-desc .section-school-content .section-school-menu {
+    min-height: 40vh;
+    padding: 30px 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.school-desc .section-school-content .section-school-tittle h1 {
+    position: relative;
+}
+
+.school-desc .section-school-content .section-school-tittle h1::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -5px;
+    height: 5px;
+    width: 5%;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-s);
+}
+
+.school-desc .section-school-content .section-school-tittle h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 5px;
+    width: 5px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-circle);
+}
+
+.school-card {
+    height: 250px;
+    width: 400px;
+    border-radius: var(--border-radius-s);
+    text-align: center;
+    box-shadow: 0 4px 8px 0 var(--secondary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 15px;
+    color: var(--dark-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.school-card i {
+    display: inline-flex;
+    width: 65px;
+    height: 65px;
+    font-size: var(--font-size-xxl);
+    color: var(--tetriarty-color);
+    border-radius: var(--border-radius-circle);
+    background: var(--secondary-color);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.school-card h3 {
+    padding: 15px 0;
+}
