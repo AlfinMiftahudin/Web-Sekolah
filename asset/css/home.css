@@ -1,41 +1,9 @@
-
-
-
-
-.section-content {
-    margin: 0px auto;
-    padding: 0px 20px;
-    max-width: var(--site-max-site);
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.hero-section {
-    position: relative;
-    min-height: 40vh;
-    background-color: var(--background-accent-color);
-    overflow: visible;
-}
-
-.hero-section .section-content {
-    position: relative;
-    display: flex;
-    align-items: center;
-    min-height: 70vh;
-    color: var(--dark-color);
-    justify-content: space-between;
-    z-index: 1;
-    margin: 0 80px;
-
-}
-
 .blob {
     position: absolute;
     border-radius: var(--border-radius-circle);
     background: rgba(50, 101, 211, 0.05);
     filter: blur(2px);
+
 }
 
 .blob-1 {
@@ -55,7 +23,7 @@
 .dot-pattern {
     position: absolute;
     inset: 0;
-    background-image: radial-gradient(circle, rgba(50, 101, 211, 0.15) 1px, transparent 1px);
+    background-image: radial-gradient(circle, rgba(50, 101, 211, 0.082) 2px, transparent 1px);
     background-size: 18px 18px;
     z-index: 0;
 }
@@ -70,14 +38,14 @@
     background: rgba(255, 239, 17, 0.5);
     width: 80px;
     height: 80px;
-    top: 15%;
-    right: 4%;
+    top: 2vh;
+    right: 12vh;
 }
 
 .squared-2 {
     width: 250px;
     height: 250px;
-    bottom: -60px;
+    bottom: -20vh;
     left: -20px;
     background: rgba(252, 184, 95, 0.2);
 
@@ -86,106 +54,200 @@
 .squared-3 {
     width: 100px;
     height: 100px;
-    bottom: 20%;
-    left: 8%;
+    bottom: 20px;
+    left: 18vh;
 }
 
-.hero-section .hero-details .quotes {
-    color: var(--tetriarty-color);
-    width: 28%;
-    font-weight: var(--font-weight-bold);
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius-s);
-    font-size: var(--font-size-s);
-    padding: 10px 15px;
-}
-
-.hero-section .hero-details .tittle {
-    color: var(--dark-color);
-    font-weight: var(--font-weight-bold);
-    font-size: 3rem;
-}
-
-
-.hero-details .tittle-nama-sekolah {
+/* section */
+.hero-sections {
     position: relative;
-    margin-top: -15px;
-    font-size: var(--font-size-xxxl);
-    color: var(--tetriarty-color);
+    display: flex;
+    background: var(--background-accent-color);
+    flex-direction: row;
+    overflow: visible;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-.tittle-nama-sekolah::before {
+.hero-section {
+    padding: 2rem;
+    height: 100%;
+    z-index: 1;
+}
+
+.quotes {
+    color: var(--tetriarty-color);
+    background: var(--white-color);
+    border: 1px solid var(--tetriarty-color);
+    border-radius: var(--border-radius-s);
+    font-weight: var(--font-weight-bold);
+    width: auto;
+    font-size: var(--font-size-s);
+    padding: 0.5rem;
+    margin: 10px 0;
+}
+
+.tittles {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+}
+
+.tittle {
+    margin-top: -20px;
+    font-weight: var(--font-weight-bold);
+}
+
+.tittle.tittle-name {
+    color: var(--tetriarty-color);
+    position: relative;
+}
+
+.tittle-name::before {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -1px;
     height: 5px;
     width: 10%;
     background-color: var(--accent-color);
     border-radius: var(--border-radius-s);
 }
 
-.tittle-nama-sekolah::after {
+.tittle-name::after {
     content: "";
     position: absolute;
-    left: 10.1%;
-    bottom: -5px;
+    left: 11%;
+    bottom: -1px;
     height: 5px;
     width: 5px;
     background-color: var(--accent-color);
     border-radius: var(--border-radius-circle);
 }
 
-
-.hero-section .hero-details .description {
-    max-width: 70%;
-    margin: 24px 0 30px;
-    font-size: var(--font-size-m);
-    text-align: justify;
+.description {
+    margin: 30px 0;
 }
 
-.hero-section .hero-image-wrapper {
+.btn-regist {
+    background: var(--accent-color);
+}
+
+.btn-contact {
+    color: var(--accent-color);
+    border: 1px solid;
+}
+
+.hero-section img {
+    display: block;
+    height: 50vh;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: var(--border-radius-m);
+    object-fit: cover;
+    box-shadow: 0 4px 28px 0 var(--primary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tittle-choose{
+    position: relative;
+}
+.tittle-choose::before {
+    content: "";
+    position: absolute;
+    left: 45%;
+    bottom: -15px;
+    height: 5px;
+    width: 5%;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-s);
+}
+
+.tittle-choose::after {
+    content: "";
+    position: absolute;
+    left: 51%;
+    bottom: -15px;
+    height: 5px;
+    width: 5px;
+    background-color: var(--accent-color);
+    border-radius: var(--border-radius-circle);
+}
+.vission{
+    text-align: center;
+    background: white;
+}
+.cards{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    user-select: none;
+       
+}
+
+.cards .card{
+    width: 420px;
+    min-height: 250px;
+    background: rgb(248, 248, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.3rem;
     border-radius: var(--border-radius-m);
     overflow: hidden;
-    display: block;
-    margin-top: 5%;
-    border-radius: var(--border-radius-m);
-    width: 100vh;
-    height: 50vh;
-    object-fit: cover;
-    box-shadow: 0 4px 8px 0 var(--primary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: var(--dark-color);
+    box-shadow: 0 4px 8px 0 var(--secondary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.hero-image-wrapper .hero-image {
+.cards .card .card-desc{
+    margin: 2px 0;
+    text-align: center;
+}
+.cards .card .card-icon{
+    color: var(--tetriarty-color);
+    padding: 40px;
+    height: 60px;
+    width: 50px;
+    font-size: var(--font-size-xxl);
+    background: var(--secondary-color);
+    border-radius: var(--border-radius-circle);
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    background: #e4e4f5;
+    justify-content: center;
+}
 
+@media only screen and (max-width: 1080px) {
+    .hero-sections {
+        flex-direction: column;
+        gap: 0;
+    }
+    .quotes {
+        width: 100%;
+    }
+    .hero-section{padding: 0;}
+    .hero-section img {
+        width: 100%;
+        box-shadow: none;
+    }
+    .blobs{
+        visibility: hidden;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cards .card{
+        width: 80%;
+    }
 }
 
 
 
-.button.instagram {
-    background-color: var(--accent-color);
-    color: var(--white-color);
 
 
 
-}
 
-.button.contact-us {
-    color: var(--tetriarty-color);
-    border-color: var(--tetriarty-color);
-}
 
-.button:hover {
-    color: var(--tetriarty-color);
-    background-color: white;
-    border-color: var(--tetriarty-color);
-}
+
+
 
 .school-desc {
     margin: 20px 0;

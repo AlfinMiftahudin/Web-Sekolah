@@ -6,16 +6,16 @@
         </a>
         <ul class="nav-menu">
             <li class="nav-items">
-                <a href="index.html" class="nav-link active">Home</a>
+                <a href="/" class="nav-link active">Home</a>
             </li>
             <li class="nav-items">
                 <a href="index.html" class="nav-link">Daftar</a>
             </li>
             <li class="nav-items">
-                <a href="index.html" class="nav-link">About</a>
+                <a href="../about" class="nav-link">About</a>
             </li>
             <li class="nav-items">
-                <a href="index.html" class="nav-link profil">Login</a>
+                <a href="index.html" class="nav-link profil"><i class="fa-solid fa-user"></i> Login</a>
             </li>
         </ul>
     </nav>

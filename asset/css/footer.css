@@ -60,3 +60,10 @@ h6.footer-tittle {
     background-color: var(--white-color);
     border-radius: var(--border-radius-s);
 }
+@media only screen and (max-width: 600px) {
+
+.footer .footer-contents{flex-direction: column; padding: 0;}
+.footer-contents .footer-content{width: 100%;padding: 10px 0; justify-items: center;}
+.footer .footer-contents .content-list{text-align: center;}
+.footer .credits{margin: 50px 0 0 ;}
+}

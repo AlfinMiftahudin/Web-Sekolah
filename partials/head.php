@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $tittle ?? 'namaSD'?>Document</title>
+    <title><?= $tittle ?? 'namaSD'?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../asset/css/global.css">
     <link rel="stylesheet" href="../asset/css/navbar.css">
@@ -9,7 +9,6 @@
     <?php if (isset($pageCss)): ?>
     <link rel="stylesheet" href="../asset/css/<?= $pageCss?>">
     <?php endif; ?>
-
 
 
 </head>
