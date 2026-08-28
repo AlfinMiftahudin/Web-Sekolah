@@ -185,13 +185,13 @@
 
 .cards .card{
     width: 420px;
-    min-height: 250px;
+    min-height: 280px;
     background: rgb(248, 248, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1.3rem;
+    padding: 1.4rem 1.3rem;
     border-radius: var(--border-radius-m);
     overflow: hidden;
     color: var(--dark-color);
@@ -200,6 +200,9 @@
 .cards .card .card-desc{
     margin: 2px 0;
     text-align: center;
+}
+.card-detail{
+    font-size: 0.6rem;
 }
 .cards .card .card-icon{
     color: var(--tetriarty-color);
@@ -237,95 +240,4 @@
     .cards .card{
         width: 80%;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-.school-desc {
-    margin: 20px 0;
-    user-select: none;
-    min-height: 50vh;
-}
-
-.school-desc .section-school-content {
-    padding: 0 3%;
-
-}
-
-.section-school-content h1 {
-    padding-top: 2%;
-    text-align: center;
-    color: var(--dark-color);
-}
-
-.school-desc .section-school-content .section-school-menu {
-    min-height: 40vh;
-    padding: 30px 0;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.school-desc .section-school-content .section-school-tittle h1 {
-    position: relative;
-}
-
-.school-desc .section-school-content .section-school-tittle h1::before {
-    content: "";
-    position: absolute;
-    left: 45%;
-    bottom: -5px;
-    height: 5px;
-    width: 5%;
-    background-color: var(--accent-color);
-    border-radius: var(--border-radius-s);
-}
-
-.school-desc .section-school-content .section-school-tittle h1::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    height: 5px;
-    width: 5px;
-    background-color: var(--accent-color);
-    border-radius: var(--border-radius-circle);
-}
-
-.school-card {
-    height: 250px;
-    width: 400px;
-    border-radius: var(--border-radius-s);
-    text-align: center;
-    box-shadow: 0 4px 8px 0 var(--secondary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 15px;
-    color: var(--dark-color);
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.school-card i {
-    display: inline-flex;
-    width: 65px;
-    height: 65px;
-    font-size: var(--font-size-xxl);
-    color: var(--tetriarty-color);
-    border-radius: var(--border-radius-circle);
-    background: var(--secondary-color);
-
-    justify-content: center;
-    align-items: center;
-}
-
-.school-card h3 {
-    padding: 15px 0;
 }
